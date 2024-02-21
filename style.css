@@ -1,0 +1,135 @@
+@font-face {
+  font-family: prodsans;
+  src: url(/fonts/Product\ Sans\ Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: prodsans;
+  color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 90%;
+  width: 100%;
+  background-color: #212121;
+  display: flex;
+  padding: 4vw;
+}
+
+#left {
+  height: 100%;
+  width: 45%;
+  background-color: #333;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+#right {
+  height: 100%;
+  width: 55%;
+  padding: 0vw 3vw;
+}
+
+#right h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#all-songs {
+  /* background-color: red; */
+  height: 80%;
+  overflow-y: auto;
+  margin-top: 20px;
+}
+
+.song-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #d9d9d9;
+  padding: 15px 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#all-songs::-webkit-scrollbar {
+  display: none;
+}
+
+.song-card:hover {
+  background-color: #444;
+}
+
+.song-card:nth-last-child(1) {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.song-card .part1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.song-card .part1 img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  /* border-radius: 5px; */
+}
+
+.song-card .part1 h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.song-card h6 {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#player {
+  height: 10%;
+  width: 100%;
+  background-color: #302e2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+#player h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgb(99, 99, 99);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+#player h3:active {
+  scale: 0.9;
+}
+
+#player h3:hover {
+  background-color: #5d5c5c;
+}
+
+#player h3 i {
+  font-size: 24px;
+}
