@@ -133,3 +133,19 @@ body {
 #player h3 i {
   font-size: 24px;
 }
+
+
+@media only screen and (max-width: 600px) {
+  #main {
+    padding: 1vw;
+    flex-direction: column;
+  }
+  #left {
+    height: 50%;
+    width: 100%;
+  }
+  #right {
+    width: 100%;
+    padding: 0vw 2vw;
+  }
+}
